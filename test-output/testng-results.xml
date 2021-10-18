@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8512" started-at="2021-10-15T04:17:26Z" finished-at="2021-10-15T04:17:35Z">
+  <suite name="Default suite" duration-ms="19613" started-at="2021-10-18T02:49:02Z" finished-at="2021-10-18T02:49:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8512" started-at="2021-10-15T04:17:26Z" finished-at="2021-10-15T04:17:35Z">
+    <test name="Default test" duration-ms="19613" started-at="2021-10-18T02:49:02Z" finished-at="2021-10-18T02:49:21Z">
       <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingTest">
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@523884b2]" name="setUpDriver" is-config="true" duration-ms="4212" started-at="2021-10-15T04:17:26Z" finished-at="2021-10-15T04:17:30Z">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@5b275dab]" name="setUpDriver" is-config="true" duration-ms="4358" started-at="2021-10-18T02:49:02Z" finished-at="2021-10-18T02:49:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@523884b2]" name="pageInitialization" is-config="true" duration-ms="26" started-at="2021-10-15T04:17:30Z" finished-at="2021-10-15T04:17:30Z">
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@5b275dab]" name="pageInitialization" is-config="true" duration-ms="36" started-at="2021-10-18T02:49:06Z" finished-at="2021-10-18T02:49:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageInitialization -->
-        <test-method status="PASS" signature="verifyLandingPage()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@523884b2]" name="verifyLandingPage" duration-ms="3554" started-at="2021-10-15T04:17:30Z" finished-at="2021-10-15T04:17:34Z">
+        <test-method status="PASS" signature="verifyFindAccountAuto()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@5b275dab]" name="verifyFindAccountAuto" duration-ms="15194" started-at="2021-10-18T02:49:06Z" finished-at="2021-10-18T02:49:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLandingPage -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@523884b2]" name="tearDown" is-config="true" duration-ms="698" started-at="2021-10-15T04:17:34Z" finished-at="2021-10-15T04:17:35Z">
+        </test-method> <!-- verifyFindAccountAuto -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@5b275dab]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-10-18T02:49:21Z" finished-at="2021-10-18T02:49:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
