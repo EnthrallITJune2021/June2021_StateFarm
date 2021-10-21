@@ -20,9 +20,15 @@ public class LandingPage {
 	@FindBy(id = "quote-main-zip-btn")
 	public WebElement startAQuote;
 	
-	public void landingPageSteps(CommonMethods commonMethods) {
-		commonMethods.dropDownSelectByValue(products, "Auto");
-		commonMethods.enterText(zipCode, "11418");
+	public void landingPageSteps(CommonMethods commonMethods, String product, String zip) {
+		commonMethods.dropDownSelectByValue(products, product);
+		commonMethods.enterText(zipCode, zip);
+		commonMethods.click(startAQuote);
+	}
+	
+	public void landingPageSteps(CommonMethods commonMethods, String product, int zip) {
+		commonMethods.dropDownSelectByValue(products, product);
+		commonMethods.enterText(zipCode, zip);
 		commonMethods.click(startAQuote);
 	}
 }

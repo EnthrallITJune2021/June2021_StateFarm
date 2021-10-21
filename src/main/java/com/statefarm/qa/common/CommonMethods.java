@@ -24,8 +24,12 @@ public class CommonMethods {
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
-	public void enterText(WebElement element, String value) {
-		element.sendKeys(value);
+	public void enterText(WebElement element, String zip) {
+		element.sendKeys(zip);
+	}
+	
+	public void enterText(WebElement element, int zip) {
+		element.sendKeys(String.valueOf(zip));
 	}
 	
 	public void click(WebElement element) {

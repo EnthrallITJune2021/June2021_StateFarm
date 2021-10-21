@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="testRunnerAuto">
+  <test thread-count="5" name="Test">
+  <parameter name = "product" value = "Auto"/>
+  <parameter name = "zip" value = "11418"/>
+  <groups>
+  	<run>
+  		<exclude name = "home" />
+  		<exclude name = "generic" />
+  	</run>
+  </groups>
+    <classes>
+      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest"/>
+      <class name="com.statefarm.qa.test.insurance.auto.testTheTestClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- testRunner -->

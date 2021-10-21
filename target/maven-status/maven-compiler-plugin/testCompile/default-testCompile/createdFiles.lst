@@ -1,1 +1,3 @@
-com\statefarm\qa\test\insurance\auto\initialQuotingTest.class
+com\statefarm\qa\test\insurance\auto\InitialQuotingAutoTest.class
+com\statefarm\qa\test\insurance\auto\testTheTestClass.class
+com\statefarm\qa\test\insurance\auto\InitialQuotingHomeOwnerTest.class

@@ -24,8 +24,7 @@ public class BasePage {
 	
 	@AfterMethod
 	public void tearDown() {
-		//driver.quit();
-		System.out.println("Test Passed....");
+		driver.quit();
 	}
 	
 }

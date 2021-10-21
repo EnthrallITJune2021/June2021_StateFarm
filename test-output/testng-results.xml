@@ -1,29 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="19613" started-at="2021-10-18T02:49:02Z" finished-at="2021-10-18T02:49:21Z">
+  <suite name="Suite" duration-ms="6472" started-at="2021-10-20T02:49:17Z" finished-at="2021-10-20T02:49:23Z">
     <groups>
+      <group name="positive">
+        <method signature="InitialQuotingHomeOwnerTest.verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@ae45eb6]" name="verifyLandingPageHome" class="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest"/>
+      </group> <!-- positive -->
+      <group name="home">
+        <method signature="InitialQuotingHomeOwnerTest.verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@ae45eb6]" name="verifyLandingPageHome" class="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest"/>
+      </group> <!-- home -->
     </groups>
-    <test name="Default test" duration-ms="19613" started-at="2021-10-18T02:49:02Z" finished-at="2021-10-18T02:49:21Z">
-      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingTest">
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@5b275dab]" name="setUpDriver" is-config="true" duration-ms="4358" started-at="2021-10-18T02:49:02Z" finished-at="2021-10-18T02:49:06Z">
+    <test name="TestHome" duration-ms="6472" started-at="2021-10-20T02:49:17Z" finished-at="2021-10-20T02:49:23Z">
+      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@ae45eb6]" name="setUpDriver" is-config="true" duration-ms="5288" started-at="2021-10-20T02:49:17Z" finished-at="2021-10-20T02:49:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@5b275dab]" name="pageInitialization" is-config="true" duration-ms="36" started-at="2021-10-18T02:49:06Z" finished-at="2021-10-18T02:49:06Z">
+        <test-method status="PASS" signature="initializationOfPages()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@ae45eb6]" name="initializationOfPages" is-config="true" duration-ms="36" started-at="2021-10-20T02:49:22Z" finished-at="2021-10-20T02:49:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pageInitialization -->
-        <test-method status="PASS" signature="verifyFindAccountAuto()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@5b275dab]" name="verifyFindAccountAuto" duration-ms="15194" started-at="2021-10-18T02:49:06Z" finished-at="2021-10-18T02:49:21Z">
+        </test-method> <!-- initializationOfPages -->
+        <test-method status="PASS" signature="verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@ae45eb6]" name="verifyLandingPageHome" duration-ms="452" started-at="2021-10-20T02:49:22Z" finished-at="2021-10-20T02:49:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Homeowners]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[11417]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFindAccountAuto -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingTest@5b275dab]" name="tearDown" is-config="true" duration-ms="0" started-at="2021-10-18T02:49:21Z" finished-at="2021-10-18T02:49:21Z">
+        </test-method> <!-- verifyLandingPageHome -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@ae45eb6]" name="tearDown" is-config="true" duration-ms="668" started-at="2021-10-20T02:49:23Z" finished-at="2021-10-20T02:49:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest -->
+    </test> <!-- TestHome -->
+  </suite> <!-- Suite -->
 </testng-results>

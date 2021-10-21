@@ -1,1 +1,6 @@
-com\statefarm\qa\auto\landingPage.class
+com\statefarm\qa\setup\BasePage.class
+com\statefarm\qa\autoPages\FindAccountPage.class
+com\statefarm\qa\common\CommonMethods.class
+com\statefarm\qa\autoPages\LandingPage.class
+com\statefarm\qa\autoPages\LoginPage.class
+com\statefarm\qa\autoPages\Step1Page.class

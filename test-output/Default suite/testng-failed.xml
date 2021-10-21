@@ -3,14 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingTest">
+      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
         <methods>
+          <include name="pageInitialization"/>
           <include name="tearDown"/>
           <include name="setUpDriver"/>
-          <include name="verifyFindAccountAuto"/>
-          <include name="pageInitialization"/>
+          <include name="verifyStepsForNewCustomerAuto"/>
         </methods>
-      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingTest -->
+      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
