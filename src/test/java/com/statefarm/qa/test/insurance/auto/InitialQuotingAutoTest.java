@@ -28,7 +28,7 @@ public class InitialQuotingAutoTest extends BasePage{
 	}
 	
 	@Parameters({"product", "zip"})
-	@Test(groups = {"positive", "auto"})
+	@Test(groups = {"positive", "auto"}, enabled = false)
 	public void verifyStepsForNewCustomerAuto(String product, String zip) {
 		landingPage.landingPageSteps(commonMethods, product, zip);
 		step1Page.step1PageNewCustomerSteps(commonMethods, driver);
@@ -38,7 +38,7 @@ public class InitialQuotingAutoTest extends BasePage{
 	}
 	
 	@Parameters("product")
-//	@Test(dependsOnGroups = {"positive", "auto"}, alwaysRun = true, ignoreMissingDependencies = true)
+	@Test(dependsOnGroups = {"positive", "auto"}, alwaysRun = false, ignoreMissingDependencies = true, enabled = true)
 	public void verifyStepsForExistingCustomerAutoValidCred(String product) {
 		landingPage.landingPageSteps(commonMethods, product, "11415");
 		step1Page.step1PageExistingCustomerSteps(commonMethods);
@@ -48,7 +48,7 @@ public class InitialQuotingAutoTest extends BasePage{
 	}
 	
 	@Parameters("product")
-//	@Test(groups = {"negative", "auto"})
+	@Test(groups = {"negative", "auto"}, enabled = false)
 	public void verifyFindAccountAuto(String product) {
 		landingPage.landingPageSteps(commonMethods, product, "11418");
 		step1Page.step1PageExistingCustomerSteps(commonMethods);

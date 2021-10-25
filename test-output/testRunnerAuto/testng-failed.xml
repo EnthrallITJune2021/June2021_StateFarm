@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testRunnerAuto]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="zip" value="11418"/>
+    <parameter name="product" value="Auto"/>
+    <groups>
+      <run>
+        <exclude name="home"/>
+        <exclude name="generic"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
+        <methods>
+          <include name="pageInitialization"/>
+          <include name="tearDown"/>
+          <include name="setUpDriver"/>
+          <include name="verifyStepsForNewCustomerAuto"/>
+        </methods>
+      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [testRunnerAuto] -->
