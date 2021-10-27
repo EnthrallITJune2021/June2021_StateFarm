@@ -1,6 +1,6 @@
 package practiceJava;
 
-public class SingletonClass{
+public class SingletonClass extends Object{
 	
 	private static SingletonClass singletonClass;
 	

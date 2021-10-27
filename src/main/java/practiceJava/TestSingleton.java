@@ -14,5 +14,11 @@ public class TestSingleton {
 		System.out.println(singletonClass4.hashCode());
 		SingletonClass singletonClass5 = SingletonClass.getInstance();
 		System.out.println(singletonClass5.hashCode());
+		singletonClass5.getClass();
+	}
+	
+	public BClass testMethod() {
+		System.out.println("Test Class method");
+		return new BClass();
 	}
 }

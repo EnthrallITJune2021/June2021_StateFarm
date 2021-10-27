@@ -16,7 +16,7 @@
           <include name="pageInitialization"/>
           <include name="tearDown"/>
           <include name="setUpDriver"/>
-          <include name="verifyStepsForNewCustomerAuto"/>
+          <include name="verifyStepsForExistingCustomerAutoValidCred" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
     </classes>

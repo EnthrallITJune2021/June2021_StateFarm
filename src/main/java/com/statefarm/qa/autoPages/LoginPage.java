@@ -22,10 +22,10 @@ public class LoginPage {
 	@FindBy(id = "submitButton")
 	public WebElement loginButton;
 	
-	public void loginPageSteps(CommonMethods commonMethods) {
+	public void loginPageSteps(CommonMethods commonMethods, String user, String pass) {
 		commonMethods.assertEquals(commonMethods.getText(loginTitle), "Log In");
-		commonMethods.enterText(userName, "user1");
-		commonMethods.enterText(passWord, "pass");
+		commonMethods.enterText(userName, user);
+		commonMethods.enterText(passWord, pass);
 		commonMethods.click(loginButton);
 	}
 }

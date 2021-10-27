@@ -9,6 +9,7 @@ import com.statefarm.qa.autoPages.LoginPage;
 import com.statefarm.qa.autoPages.Step1Page;
 import com.statefarm.qa.common.CommonMethods;
 import com.statefarm.qa.setup.BasePage;
+import com.statefarm.qa.utils.ReadProperties;
 
 public class InitialQuotingAutoTest extends BasePage{
 	
@@ -42,7 +43,7 @@ public class InitialQuotingAutoTest extends BasePage{
 	public void verifyStepsForExistingCustomerAutoValidCred(String product) {
 		landingPage.landingPageSteps(commonMethods, product, "11415");
 		step1Page.step1PageExistingCustomerSteps(commonMethods);
-		loginPage.loginPageSteps(commonMethods);
+		loginPage.loginPageSteps(commonMethods, ReadProperties.instanceOFProp().getUsername(), ReadProperties.instanceOFProp().getPassword());
 		System.out.println("Test 2 Passed..");
 		//Existing customer flow
 	}
@@ -52,7 +53,7 @@ public class InitialQuotingAutoTest extends BasePage{
 	public void verifyFindAccountAuto(String product) {
 		landingPage.landingPageSteps(commonMethods, product, "11418");
 		step1Page.step1PageExistingCustomerSteps(commonMethods);
-		loginPage.loginPageSteps(commonMethods);
+		loginPage.loginPageSteps(commonMethods, ReadProperties.instanceOFProp().getUsername(), ReadProperties.instanceOFProp().getPassword());
 		findAccountPage.findAccountSteps(commonMethods);
 		System.out.println("Test 3 Passed..");
 		//forgotten userId/pass pass flow
