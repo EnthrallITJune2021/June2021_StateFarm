@@ -1,6 +1,9 @@
 package com.statefarm.qa.test.insurance.auto;
 
+import java.util.ArrayList;
+import java.util.Iterator;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.statefarm.qa.autoPages.FindAccountPage;
@@ -9,9 +12,19 @@ import com.statefarm.qa.autoPages.LoginPage;
 import com.statefarm.qa.autoPages.Step1Page;
 import com.statefarm.qa.common.CommonMethods;
 import com.statefarm.qa.setup.BasePage;
+import com.statefarm.qa.utils.Details;
 import com.statefarm.qa.utils.ReadProperties;
 
 public class InitialQuotingAutoTest extends BasePage{
+	
+	@DataProvider (name = "personalDetails")
+	public Iterator<Details> getList(){
+		ArrayList<Details> list = new ArrayList<Details>();
+		list.add(new Details("john", "henry", "doe", "Sr", "8786 Lefferts Blvd", "2B", "Richmond hill", "11418", "10/12/1855"));
+		list.add(new Details("simon", "henry", "collins", "Jr", "8787 Lefferts Blvd", "6C", "Richmond hill", "11418", "10/12/2000"));
+		list.add(new Details("Jen", "alic", "doe", "Sr", "8788 Lefferts Blvd", "7F", "Richmond hill", "11418", "10/12/1988"));
+		return list.iterator();
+	}
 	
 	CommonMethods commonMethods;
 	LandingPage landingPage;
@@ -28,18 +41,17 @@ public class InitialQuotingAutoTest extends BasePage{
 		findAccountPage = new FindAccountPage(driver);
 	}
 	
-	@Parameters({"product", "zip"})
-	@Test(groups = {"positive", "auto"}, enabled = false)
-	public void verifyStepsForNewCustomerAuto(String product, String zip) {
-		landingPage.landingPageSteps(commonMethods, product, zip);
-		step1Page.step1PageNewCustomerSteps(commonMethods, driver);
+	@Test(dataProvider = "personalDetails", groups = {"positive", "auto"}, enabled = true)
+	public void verifyStepsForNewCustomerAuto(Details details) {
+		landingPage.landingPageSteps(commonMethods, "Auto", "11418");
+		step1Page.step1PageNewCustomerDetailsSteps(commonMethods, details);
 		System.out.println("Test 1 Passed..");
 		//step2Page steps and validation
 		//step3Page steps and validation
 	}
 	
 	@Parameters("product")
-	@Test(dependsOnGroups = {"positive", "auto"}, alwaysRun = false, ignoreMissingDependencies = true, enabled = true)
+	@Test(dependsOnGroups = {"positive", "auto"}, alwaysRun = false, ignoreMissingDependencies = true, enabled = false)
 	public void verifyStepsForExistingCustomerAutoValidCred(String product) {
 		landingPage.landingPageSteps(commonMethods, product, "11415");
 		step1Page.step1PageExistingCustomerSteps(commonMethods);
@@ -58,4 +70,5 @@ public class InitialQuotingAutoTest extends BasePage{
 		System.out.println("Test 3 Passed..");
 		//forgotten userId/pass pass flow
 	}
+	
 }

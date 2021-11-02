@@ -5,8 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import com.statefarm.qa.common.CommonMethods;
+import com.statefarm.qa.setup.BasePage;
+import com.statefarm.qa.utils.Details;
 
 public class Step1Page {
 
@@ -43,23 +44,25 @@ public class Step1Page {
 	@FindBy(id = "btnContinue")
 	public WebElement continueButton;
 	
-	public void step1PageNewCustomerSteps(CommonMethods commonMethods, WebDriver driver) {
-		commonMethods.waitUntilVisible(stepTitle, driver);
-		commonMethods.assertEquals(commonMethods.getText(stepTitle), "STEP 1 OF 9");
-		commonMethods.enterText(firstName, "John");
-		commonMethods.enterText(middleName, "M");
-		commonMethods.enterText(lastName, "Doe");
+	public String title = "STEP 1 OF 9"; 
+	
+	public void step1PageNewCustomerDetailsSteps(CommonMethods commonMethods, Details details) {
+		commonMethods.waitUntilVisible(stepTitle);
+		commonMethods.assertEquals(commonMethods.getText(stepTitle), title);
+		commonMethods.enterText(firstName, details.getFirstName());
+		commonMethods.enterText(middleName, details.getMiddleName());
+		commonMethods.enterText(lastName, details.getLastName());
 		commonMethods.click(suffixButton);
-		commonMethods.click(clickSuffix("Sr", driver));
-		commonMethods.enterText(street, "8888 Lefferts Blvd");
-		commonMethods.enterText(aptNo, "4A");
+		commonMethods.click(clickSuffix(details.getPrefix()));
+		commonMethods.enterText(street, details.getStreet());
+		commonMethods.enterText(aptNo, details.getApt());
 		commonMethods.clearText(city);
-		commonMethods.enterText(city, "South Ozone Park");
+		commonMethods.enterText(city, details.getCity());
 		commonMethods.clearText(zipCode);
-		commonMethods.enterText(zipCode, "11418");
-		commonMethods.enterText(DOB, "10/15/2000");
+		commonMethods.enterText(zipCode, details.getZip());
+		commonMethods.enterText(DOB, details.getDob());
 		commonMethods.clearText(effectiveDate);
-		commonMethods.enterText(effectiveDate, "10/25/2021");
+		commonMethods.enterText(effectiveDate, details.getTodaysDate());
 		commonMethods.click(continueButton);
 	}
 	
@@ -67,7 +70,7 @@ public class Step1Page {
 		commonMethods.click(existingCustomer);
 	}
 	
-	public WebElement clickSuffix(String expectedSuffix, WebDriver driver) {
-		return driver.findElement(By.xpath("//li[contains(.,'"+ expectedSuffix +"')]"));
+	public WebElement clickSuffix(String expectedSuffix) {
+		return BasePage.driver.findElement(By.xpath("//li[contains(.,'"+ expectedSuffix +"')]"));
 	}
 }

@@ -11,8 +11,11 @@ public class ReadProperties {
 	private static ReadProperties instanceProperties;
 	private static Properties properties;
 	
+	private static String url;
 	private static String username;
 	private static String password;
+	private static int pageLoadTime;
+	private static int implicitLoadTime;
 	
 	private final static String configFilePath = "configuration\\config.properties";
 	
@@ -37,8 +40,15 @@ public class ReadProperties {
 			e.printStackTrace();
 			System.out.println("File Not Found on the given location : " + new File(configFilePath).getAbsolutePath());
 		}
+		url = properties.getProperty("url");
 		username = properties.getProperty("username");
 		password = properties.getProperty("password");
+		pageLoadTime = Integer.parseInt(properties.getProperty("pageWait"));
+		implicitLoadTime = Integer.parseInt(properties.getProperty("implicitWait"));
+	}
+	
+	public String getURL() {
+		return url;
 	}
 	
 	public String getUsername() {
@@ -47,5 +57,13 @@ public class ReadProperties {
 	
 	public String getPassword() {
 		return password;
+	}
+	
+	public int getPageLoadTime() {
+		return pageLoadTime;
+	}
+	
+	public int getImplicitLoadTime() {
+		return implicitLoadTime;
 	}
 }

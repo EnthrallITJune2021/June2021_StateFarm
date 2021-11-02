@@ -1,11 +1,13 @@
 package com.statefarm.qa.common;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+
+import com.statefarm.qa.setup.BasePage;
 
 public class CommonMethods {
 
@@ -15,12 +17,11 @@ public class CommonMethods {
 	}
 	
 	public String getText(WebElement element) {
-		System.out.println(element.getText());
 		return element.getText();
 	}
 	
-	public void waitUntilVisible(WebElement element, WebDriver driver) {
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+	public void waitUntilVisible(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(BasePage.driver, 30);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 	
@@ -42,5 +43,15 @@ public class CommonMethods {
 	
 	public void clearText(WebElement element) {
 		element.clear();
+	}
+	
+	public void hoverOnly(WebElement element) {
+		Actions actions = new Actions(BasePage.driver);
+		actions.moveToElement(element).build().perform();
+	}
+	
+	public void hoverAndClick(WebElement element) {
+		Actions actions = new Actions(BasePage.driver);
+		actions.moveToElement(element).click().perform();
 	}
 }

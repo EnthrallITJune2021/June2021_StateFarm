@@ -1,31 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="TestHome(failed)">
-    <parameter name="zip" value="11417"/>
-    <parameter name="product" value="Homeowners"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [testRunnerAuto]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="zip" value="11418"/>
+    <parameter name="product" value="Auto"/>
     <groups>
       <run>
-        <exclude name="auto"/>
+        <exclude name="home"/>
+        <exclude name="generic"/>
       </run>
     </groups>
     <classes>
-      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest">
-        <methods>
-          <include name="initializationOfPages"/>
-          <include name="tearDown"/>
-          <include name="setUpDriver"/>
-          <include name="verifyLandingPageHome"/>
-        </methods>
-      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest -->
       <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
         <methods>
+          <include name="verifyStepsForNewCustomerAuto2"/>
           <include name="pageInitialization"/>
           <include name="tearDown"/>
           <include name="setUpDriver"/>
-          <include name="verifyStepsForExistingCustomerAutoValidCred" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
     </classes>
-  </test> <!-- TestHome(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [testRunnerAuto] -->

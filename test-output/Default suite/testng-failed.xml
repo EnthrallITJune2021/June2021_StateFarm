@@ -5,12 +5,20 @@
     <classes>
       <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
         <methods>
+          <include name="verifyStepsForNewCustomerAuto2"/>
           <include name="pageInitialization"/>
           <include name="tearDown"/>
           <include name="setUpDriver"/>
-          <include name="verifyStepsForNewCustomerAuto"/>
         </methods>
       </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
+      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest">
+        <methods>
+          <include name="initializationOfPages"/>
+          <include name="tearDown"/>
+          <include name="setUpDriver"/>
+          <include name="verifyLandingPageHome"/>
+        </methods>
+      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
