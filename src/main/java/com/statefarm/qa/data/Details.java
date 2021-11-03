@@ -1,4 +1,4 @@
-package com.statefarm.qa.utils;
+package com.statefarm.qa.data;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

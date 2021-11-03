@@ -1,3 +1,7 @@
+com\statefarm\qa\utils\ExcelReader.class
+com\statefarm\qa\data\PersonalDetails.class
+com\statefarm\qa\autoPages\Step1Page.class
+practiceJava\DataStructure.class
 com\statefarm\qa\setup\BasePage.class
 com\statefarm\qa\common\CommonMethods.class
 practiceJava\AClass.class
@@ -7,5 +11,5 @@ com\statefarm\qa\utils\ReadProperties.class
 com\statefarm\qa\autoPages\FindAccountPage.class
 practiceJava\BClass.class
 com\statefarm\qa\autoPages\LandingPage.class
-com\statefarm\qa\autoPages\Step1Page.class
+com\statefarm\qa\data\Details.class
 practiceJava\SingletonClass.class

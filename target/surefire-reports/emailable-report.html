@@ -9,41 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">TestHome</a></td><td class="num">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">41,916</td><td></td><td>auto</td></tr>
+<tr><td><a href="#t0">TestHome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">6,408</td><td></td><td>auto</td></tr>
 <tr><th colspan="7">testRunnerAuto</th></tr>
-<tr class="stripe"><td><a href="#t1">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">12,998</td><td></td><td>generic, home</td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num attn">1</th><th class="num">54,914</th><th colspan="2"></th></tr>
+<tr class="stripe"><td><a href="#t1">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">41,027</td><td></td><td>generic, home</td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num">47,435</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestHome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest</td><td><a href="#m0">verifyStepsForExistingCustomerAutoValidCred</a></td><td rowspan="1">1635729289705</td><td rowspan="1">30500</td></tr><tr><th colspan="4">TestHome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest</td><td><a href="#m1">verifyLandingPageHome</a></td><td rowspan="1">1635729283170</td><td rowspan="1">479</td></tr></tbody>
-<tbody><tr><th colspan="4">testRunnerAuto</th></tr></tbody><tbody id="t1"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest</td><td><a href="#m2">verifyStepsForExistingCustomerAutoValidCred</a></td><td rowspan="1">1635729270808</td><td rowspan="1">7435</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestHome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest</td><td><a href="#m0">verifyLandingPageHome</a></td><td rowspan="1">1635899070467</td><td rowspan="1">377</td></tr></tbody>
+<tbody><tr><th colspan="4">testRunnerAuto</th></tr></tbody><tbody id="t1"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest</td><td><a href="#m1">verifyStepsForNewCustomerAuto</a></td><td rowspan="3">1635899042655</td><td rowspan="3">8638</td></tr><tr class="passedeven"><td><a href="#m2">verifyStepsForNewCustomerAuto</a></td></tr><tr class="passedeven"><td><a href="#m3">verifyStepsForNewCustomerAuto</a></td></tr></tbody>
 </table>
-<h2>TestHome</h2><h3 id="m0">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest#verifyStepsForExistingCustomerAutoValidCred</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Homeowners</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnExisting&quot;}
-  (Session info: chrome=95.0.4638.69)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NAS&apos;, ip: &apos;192.168.1.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 417a25db4170877ba614fba84277bdcd
-*** Element info: {Using=id, value=btnExisting}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at com.statefarm.qa.common.CommonMethods.click(CommonMethods.java:36)
-	at com.statefarm.qa.autoPages.Step1Page.step1PageExistingCustomerSteps(Step1Page.java:67)
-	at com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest.verifyStepsForExistingCustomerAutoValidCred(InitialQuotingAutoTest.java:45)
-... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest#verifyLandingPageHome</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Homeowners</td><td>11417</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Test</h2><h3 id="m2">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest#verifyStepsForExistingCustomerAutoValidCred</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Auto</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestHome</h2><h3 id="m0">com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest#verifyLandingPageHome</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Homeowners</td><td>11417</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m1">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest#verifyStepsForNewCustomerAuto</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.statefarm.qa.data.Details@65a48602</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest#verifyStepsForNewCustomerAuto</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.statefarm.qa.data.Details@75483843</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest#verifyStepsForNewCustomerAuto</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>com.statefarm.qa.data.Details@14ef2482</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

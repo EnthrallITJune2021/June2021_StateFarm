@@ -1,84 +1,267 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="8" passed="3">
+<testng-results skipped="0" failed="0" ignored="6" total="15" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="testRunnerAuto" duration-ms="39971" started-at="2021-11-02T03:09:26Z" finished-at="2021-11-02T03:10:06Z">
+  <suite name="testRunnerAuto" duration-ms="121664" started-at="2021-11-03T02:39:59Z" finished-at="2021-11-03T02:42:01Z">
     <groups>
+      <group name="negative">
+        <method signature="InitialQuotingAutoTest.verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" class="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest"/>
+      </group> <!-- negative -->
       <group name="auto">
-        <method signature="InitialQuotingAutoTest.verifyStepsForNewCustomerAuto(com.statefarm.qa.utils.Details)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="verifyStepsForNewCustomerAuto" class="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest"/>
+        <method signature="InitialQuotingAutoTest.verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" class="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest"/>
       </group> <!-- auto -->
-      <group name="positive">
-        <method signature="InitialQuotingAutoTest.verifyStepsForNewCustomerAuto(com.statefarm.qa.utils.Details)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="verifyStepsForNewCustomerAuto" class="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest"/>
-      </group> <!-- positive -->
     </groups>
-    <test name="Test" duration-ms="39971" started-at="2021-11-02T03:09:26Z" finished-at="2021-11-02T03:10:06Z">
+    <test name="Test" duration-ms="121664" started-at="2021-11-03T02:39:59Z" finished-at="2021-11-03T02:42:01Z">
       <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="setUpDriver" is-config="true" duration-ms="6947" started-at="2021-11-02T03:09:26Z" finished-at="2021-11-02T03:09:33Z">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="5454" started-at="2021-11-03T02:40:00Z" finished-at="2021-11-03T02:40:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="pageInitialization" is-config="true" duration-ms="31" started-at="2021-11-02T03:09:33Z" finished-at="2021-11-02T03:09:33Z">
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="45" started-at="2021-11-03T02:40:06Z" finished-at="2021-11-03T02:40:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageInitialization -->
-        <test-method status="PASS" signature="verifyStepsForNewCustomerAuto(com.statefarm.qa.utils.Details)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="verifyStepsForNewCustomerAuto" duration-ms="7867" started-at="2021-11-02T03:09:33Z" data-provider="personalDetails" finished-at="2021-11-02T03:09:41Z">
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="7509" started-at="2021-11-03T02:40:06Z" data-provider="userPass" finished-at="2021-11-03T02:40:13Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.statefarm.qa.utils.Details@388ba540]]>
+                <![CDATA[user111]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass111]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyStepsForNewCustomerAuto -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="tearDown" is-config="true" duration-ms="731" started-at="2021-11-02T03:09:41Z" finished-at="2021-11-02T03:09:42Z">
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="769" started-at="2021-11-03T02:40:13Z" finished-at="2021-11-03T02:40:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="setUpDriver" is-config="true" duration-ms="3496" started-at="2021-11-02T03:09:42Z" finished-at="2021-11-02T03:09:45Z">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="4214" started-at="2021-11-03T02:40:14Z" finished-at="2021-11-03T02:40:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="pageInitialization" is-config="true" duration-ms="1" started-at="2021-11-02T03:09:45Z" finished-at="2021-11-02T03:09:45Z">
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="1" started-at="2021-11-03T02:40:18Z" finished-at="2021-11-03T02:40:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageInitialization -->
-        <test-method status="PASS" signature="verifyStepsForNewCustomerAuto(com.statefarm.qa.utils.Details)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="verifyStepsForNewCustomerAuto" duration-ms="7903" started-at="2021-11-02T03:09:45Z" data-provider="personalDetails" finished-at="2021-11-02T03:09:53Z">
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="6910" started-at="2021-11-03T02:40:18Z" data-provider="userPass" finished-at="2021-11-03T02:40:25Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.statefarm.qa.utils.Details@1e886a5b]]>
+                <![CDATA[user112]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass112]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyStepsForNewCustomerAuto -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="tearDown" is-config="true" duration-ms="700" started-at="2021-11-02T03:09:53Z" finished-at="2021-11-02T03:09:54Z">
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="754" started-at="2021-11-03T02:40:25Z" finished-at="2021-11-03T02:40:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="setUpDriver" is-config="true" duration-ms="3632" started-at="2021-11-02T03:09:54Z" finished-at="2021-11-02T03:09:58Z">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="3957" started-at="2021-11-03T02:40:26Z" finished-at="2021-11-03T02:40:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="pageInitialization" is-config="true" duration-ms="1" started-at="2021-11-02T03:09:58Z" finished-at="2021-11-02T03:09:58Z">
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="1" started-at="2021-11-03T02:40:30Z" finished-at="2021-11-03T02:40:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageInitialization -->
-        <test-method status="PASS" signature="verifyStepsForNewCustomerAuto(com.statefarm.qa.utils.Details)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="verifyStepsForNewCustomerAuto" duration-ms="7871" started-at="2021-11-02T03:09:58Z" data-provider="personalDetails" finished-at="2021-11-02T03:10:06Z">
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="7361" started-at="2021-11-03T02:40:30Z" data-provider="userPass" finished-at="2021-11-03T02:40:37Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[com.statefarm.qa.utils.Details@267bbe1a]]>
+                <![CDATA[user113]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass113]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyStepsForNewCustomerAuto -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@1794d431]" name="tearDown" is-config="true" duration-ms="747" started-at="2021-11-02T03:10:06Z" finished-at="2021-11-02T03:10:06Z">
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="1271" started-at="2021-11-03T02:40:37Z" finished-at="2021-11-03T02:40:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="4812" started-at="2021-11-03T02:40:38Z" finished-at="2021-11-03T02:40:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="2" started-at="2021-11-03T02:40:43Z" finished-at="2021-11-03T02:40:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageInitialization -->
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="9036" started-at="2021-11-03T02:40:43Z" data-provider="userPass" finished-at="2021-11-03T02:40:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user114]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass114]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="785" started-at="2021-11-03T02:40:52Z" finished-at="2021-11-03T02:40:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="4194" started-at="2021-11-03T02:40:53Z" finished-at="2021-11-03T02:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="2" started-at="2021-11-03T02:40:57Z" finished-at="2021-11-03T02:40:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageInitialization -->
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="8884" started-at="2021-11-03T02:40:57Z" data-provider="userPass" finished-at="2021-11-03T02:41:06Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user115]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass115]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="715" started-at="2021-11-03T02:41:06Z" finished-at="2021-11-03T02:41:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="4019" started-at="2021-11-03T02:41:07Z" finished-at="2021-11-03T02:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="1" started-at="2021-11-03T02:41:11Z" finished-at="2021-11-03T02:41:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageInitialization -->
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="6481" started-at="2021-11-03T02:41:11Z" data-provider="userPass" finished-at="2021-11-03T02:41:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user116]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass116]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="753" started-at="2021-11-03T02:41:17Z" finished-at="2021-11-03T02:41:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="4283" started-at="2021-11-03T02:41:18Z" finished-at="2021-11-03T02:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="0" started-at="2021-11-03T02:41:22Z" finished-at="2021-11-03T02:41:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageInitialization -->
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="10240" started-at="2021-11-03T02:41:22Z" data-provider="userPass" finished-at="2021-11-03T02:41:33Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user117]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass117]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="734" started-at="2021-11-03T02:41:33Z" finished-at="2021-11-03T02:41:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="4501" started-at="2021-11-03T02:41:33Z" finished-at="2021-11-03T02:41:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="1" started-at="2021-11-03T02:41:38Z" finished-at="2021-11-03T02:41:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageInitialization -->
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="7054" started-at="2021-11-03T02:41:38Z" data-provider="userPass" finished-at="2021-11-03T02:41:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user118]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass118]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="718" started-at="2021-11-03T02:41:45Z" finished-at="2021-11-03T02:41:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="setUpDriver" is-config="true" duration-ms="4356" started-at="2021-11-03T02:41:46Z" finished-at="2021-11-03T02:41:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpDriver -->
+        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="pageInitialization" is-config="true" duration-ms="1" started-at="2021-11-03T02:41:50Z" finished-at="2021-11-03T02:41:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- pageInitialization -->
+        <test-method status="PASS" signature="verifyFindAccountAutoDataProvider(java.lang.String, java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="verifyFindAccountAutoDataProvider" duration-ms="9809" started-at="2021-11-03T02:41:50Z" data-provider="userPass" finished-at="2021-11-03T02:42:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user119]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pass119]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFindAccountAutoDataProvider -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@464bee09]" name="tearDown" is-config="true" duration-ms="1281" started-at="2021-11-03T02:42:00Z" finished-at="2021-11-03T02:42:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

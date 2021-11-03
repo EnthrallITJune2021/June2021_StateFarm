@@ -11,8 +11,9 @@ import com.statefarm.qa.autoPages.LandingPage;
 import com.statefarm.qa.autoPages.LoginPage;
 import com.statefarm.qa.autoPages.Step1Page;
 import com.statefarm.qa.common.CommonMethods;
+import com.statefarm.qa.data.Details;
 import com.statefarm.qa.setup.BasePage;
-import com.statefarm.qa.utils.Details;
+import com.statefarm.qa.utils.ExcelReader;
 import com.statefarm.qa.utils.ReadProperties;
 
 public class InitialQuotingAutoTest extends BasePage{
@@ -24,6 +25,15 @@ public class InitialQuotingAutoTest extends BasePage{
 		list.add(new Details("simon", "henry", "collins", "Jr", "8787 Lefferts Blvd", "6C", "Richmond hill", "11418", "10/12/2000"));
 		list.add(new Details("Jen", "alic", "doe", "Sr", "8788 Lefferts Blvd", "7F", "Richmond hill", "11418", "10/12/1988"));
 		return list.iterator();
+	}
+	
+	@DataProvider (name = "userPass")
+	public Object[][] getUserPass(){
+		String fileName = System.getProperty("user.dir") + ReadProperties.instanceOFProp().getExcelPath();
+		String sheetName = ReadProperties.instanceOFProp().getSheetName();
+		ExcelReader reader = new ExcelReader(fileName, sheetName);
+		Object[][] objects = reader.dataTable();
+		return objects;
 	}
 	
 	CommonMethods commonMethods;
@@ -41,7 +51,7 @@ public class InitialQuotingAutoTest extends BasePage{
 		findAccountPage = new FindAccountPage(driver);
 	}
 	
-	@Test(dataProvider = "personalDetails", groups = {"positive", "auto"}, enabled = true)
+	@Test(dataProvider = "personalDetails", groups = {"positive", "auto"}, enabled = false)
 	public void verifyStepsForNewCustomerAuto(Details details) {
 		landingPage.landingPageSteps(commonMethods, "Auto", "11418");
 		step1Page.step1PageNewCustomerDetailsSteps(commonMethods, details);
@@ -71,4 +81,12 @@ public class InitialQuotingAutoTest extends BasePage{
 		//forgotten userId/pass pass flow
 	}
 	
+	@Test(dataProvider = "userPass", groups = {"negative", "auto"}, enabled = true)
+	public void verifyFindAccountAutoDataProvider(String user, String pass) {
+		landingPage.landingPageSteps(commonMethods,"Auto" , "11418");
+		step1Page.step1PageExistingCustomerSteps(commonMethods);
+		loginPage.loginPageSteps(commonMethods, user, pass);
+		System.out.println("Test 4 Passed..");
+		//forgotten userId/pass pass flow
+	}
 }

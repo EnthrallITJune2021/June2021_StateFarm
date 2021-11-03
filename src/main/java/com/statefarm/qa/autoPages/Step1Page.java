@@ -6,8 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.statefarm.qa.common.CommonMethods;
+import com.statefarm.qa.data.Details;
 import com.statefarm.qa.setup.BasePage;
-import com.statefarm.qa.utils.Details;
 
 public class Step1Page {
 

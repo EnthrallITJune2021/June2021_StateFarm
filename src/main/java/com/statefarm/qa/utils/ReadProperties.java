@@ -17,6 +17,9 @@ public class ReadProperties {
 	private static int pageLoadTime;
 	private static int implicitLoadTime;
 	
+	private static String excelPath;
+	private static String sheetName;
+	
 	private final static String configFilePath = "configuration\\config.properties";
 	
 	private ReadProperties() {
@@ -45,6 +48,8 @@ public class ReadProperties {
 		password = properties.getProperty("password");
 		pageLoadTime = Integer.parseInt(properties.getProperty("pageWait"));
 		implicitLoadTime = Integer.parseInt(properties.getProperty("implicitWait"));
+		excelPath = properties.getProperty("excelPath");
+		sheetName = properties.getProperty("sheetName");
 	}
 	
 	public String getURL() {
@@ -65,5 +70,13 @@ public class ReadProperties {
 	
 	public int getImplicitLoadTime() {
 		return implicitLoadTime;
+	}
+	
+	public String getExcelPath() {
+		return excelPath;
+	}
+	
+	public String getSheetName() {
+		return sheetName;
 	}
 }

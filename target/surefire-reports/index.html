@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">2 suites, 1 failed test</span>
+      <span class="top-banner-font-1">2 suites</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-passed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest" class="method navigator-link" hash-for-method="verifyStepsForExistingCustomerAutoValidCred(Homeowners)">verifyStepsForExistingCustomerAutoValidCred(Homeowners)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -152,7 +138,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-testRunnerAuto" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>2 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -184,7 +170,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -195,7 +181,17 @@
                     <div class="method-list-content passed suite-testRunnerAuto">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-testRunnerAuto" title="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest" class="method navigator-link" hash-for-method="verifyStepsForExistingCustomerAutoValidCred(Auto)">verifyStepsForExistingCustomerAutoValidCred(Auto)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-testRunnerAuto" title="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest" class="method navigator-link" hash-for-method="verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@65a48602)">verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@65a48602)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testRunnerAuto" title="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest" class="method navigator-link" hash-for-method="verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@75483843)">verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@75483843)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-testRunnerAuto" title="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest" class="method navigator-link" hash-for-method="verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@14ef2482)">verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@14ef2482)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-testRunnerAuto -->
@@ -210,49 +206,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyStepsForExistingCustomerAutoValidCred(Homeowners)">
-                  </a> <!-- verifyStepsForExistingCustomerAutoValidCred(Homeowners) -->
-                  <span class="method-name">verifyStepsForExistingCustomerAutoValidCred</span>
-                  <span class="parameters">(Homeowners)</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#btnExisting&quot;}
-  (Session info: chrome=95.0.4638.69)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;NAS&apos;, ip: &apos;192.168.1.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:1118}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 417a25db4170877ba614fba84277bdcd
-*** Element info: {Using=id, value=btnExisting}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
-	at com.statefarm.qa.common.CommonMethods.click(CommonMethods.java:36)
-	at com.statefarm.qa.autoPages.Step1Page.step1PageExistingCustomerSteps(Step1Page.java:67)
-	at com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest.verifyStepsForExistingCustomerAutoValidCred(InitialQuotingAutoTest.java:45)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -279,10 +232,26 @@ Session ID: 417a25db4170877ba614fba84277bdcd
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyStepsForExistingCustomerAutoValidCred(Auto)">
-                  </a> <!-- verifyStepsForExistingCustomerAutoValidCred(Auto) -->
-                  <span class="method-name">verifyStepsForExistingCustomerAutoValidCred</span>
-                  <span class="parameters">(Auto)</span>
+                  <a name="verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@65a48602)">
+                  </a> <!-- verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@65a48602) -->
+                  <span class="method-name">verifyStepsForNewCustomerAuto</span>
+                  <span class="parameters">(com.statefarm.qa.data.Details@65a48602)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@75483843)">
+                  </a> <!-- verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@75483843) -->
+                  <span class="method-name">verifyStepsForNewCustomerAuto</span>
+                  <span class="parameters">(com.statefarm.qa.data.Details@75483843)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@14ef2482)">
+                  </a> <!-- verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@14ef2482) -->
+                  <span class="method-name">verifyStepsForNewCustomerAuto</span>
+                  <span class="parameters">(com.statefarm.qa.data.Details@14ef2482)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -385,6 +354,10 @@ Session ID: 417a25db4170877ba614fba84277bdcd
                 <span class="method-in-group-name">verifyLandingPageHome</span>
                 <br/>
               </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyStepsForNewCustomerAuto</span>
+                <br/>
+              </div> <!-- method-in-group -->
             </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -393,6 +366,26 @@ Session ID: 417a25db4170877ba614fba84277bdcd
             <span class="header-content">Groups for testRunnerAuto</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">auto</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyStepsForNewCustomerAuto</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyLandingPageHome</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyStepsForNewCustomerAuto</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -409,20 +402,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyStepsForExistingCustomerAutoValidCred')
-data.setCell(0, 2, 'com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest')
-data.setCell(0, 3, 30500);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLandingPageHome')
-data.setCell(1, 2, 'com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest')
-data.setCell(1, 3, 479);
+data.setCell(0, 1, 'verifyLandingPageHome')
+data.setCell(0, 2, 'com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest')
+data.setCell(0, 3, 377);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 30 seconds</span>
+              <span class="suite-total-time">Total running time: 377 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -442,16 +431,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyStepsForExistingCustomerAutoValidCred')
+data.setCell(0, 1, 'verifyStepsForNewCustomerAuto')
 data.setCell(0, 2, 'com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest')
-data.setCell(0, 3, 7435);
+data.setCell(0, 3, 9357);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyStepsForNewCustomerAuto')
+data.setCell(1, 2, 'com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest')
+data.setCell(1, 3, 8781);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyStepsForNewCustomerAuto')
+data.setCell(2, 2, 'com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest')
+data.setCell(2, 3, 8638);
 window.suiteTableData['testRunnerAuto']= { tableData: data, tableDiv: 'times-div-testRunnerAuto'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 26 seconds</span>
               <div id="times-div-testRunnerAuto">
               </div> <!-- times-div-testRunnerAuto -->
             </div> <!-- times-div -->
@@ -473,13 +470,15 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">3 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">verifyFindAccountAuto</span>
+                <br/>
+                <span class="ignored-method-name">verifyStepsForExistingCustomerAutoValidCred</span>
                 <br/>
                 <span class="ignored-method-name">verifyStepsForNewCustomerAuto</span>
                 <br/>
@@ -493,6 +492,15 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">verifyFindAccountAuto</span>
+                <br/>
+                <span class="ignored-method-name">verifyStepsForExistingCustomerAutoValidCred</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">com.statefarm.qa.test.insurance.auto.testTheTestClass</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">secondTest</span>
@@ -500,15 +508,6 @@ return data;
                 <span class="ignored-method-name">thirdTest</span>
                 <br/>
                 <span class="ignored-method-name">aTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">verifyFindAccountAuto</span>
-                <br/>
-                <span class="ignored-method-name">verifyStepsForNewCustomerAuto</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -527,36 +526,15 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">initializationOfPages</span>
-                <span class="method-start">4869 ms</span>
+                <span class="method-start">5746 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyLandingPageHome(Homeowners, 11417)</span>
-                <span class="method-start">4870 ms</span>
+                <span class="method-start">5747 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5349 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUpDriver</span>
-                <span class="method-start">5350 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">pageInitialization</span>
-                <span class="method-start">11404 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifyStepsForExistingCustomerAutoValidCred(Homeowners)</span>
-                <span class="method-start">11405 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">41914 ms</span>
+                <span class="method-start">6124 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -573,15 +551,47 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">pageInitialization</span>
-                <span class="method-start">5486 ms</span>
+                <span class="method-start">5534 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyStepsForExistingCustomerAutoValidCred(Auto)</span>
-                <span class="method-start">5531 ms</span>
+                <span class="method-name">verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@14ef2482)</span>
+                <span class="method-start">5591 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12970 ms</span>
+                <span class="method-start">14949 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver</span>
+                <span class="method-start">15277 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">pageInitialization</span>
+                <span class="method-start">18959 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@65a48602)</span>
+                <span class="method-start">18960 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27599 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUpDriver</span>
+                <span class="method-start">27905 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">pageInitialization</span>
+                <span class="method-start">31800 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyStepsForNewCustomerAuto(com.statefarm.qa.data.Details@75483843)</span>
+                <span class="method-start">31801 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40582 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
