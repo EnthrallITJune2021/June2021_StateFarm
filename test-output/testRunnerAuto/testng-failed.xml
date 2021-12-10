@@ -13,10 +13,16 @@
     <classes>
       <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
         <methods>
-          <include name="verifyStepsForNewCustomerAuto2"/>
+          <include name="initiateReporting"/>
           <include name="pageInitialization"/>
-          <include name="tearDown"/>
           <include name="setUpDriver"/>
+          <include name="verifyFindAccountAuto" invocation-numbers="0"/>
+          <include name="verifyFindAccountAutoDataProvider" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
+          <include name="verifyStepsForNewCustomerAuto" invocation-numbers="0 1 2"/>
+          <include name="verifyStepsForExistingCustomerAutoValidCred"/>
+          <include name="startExtent"/>
+          <include name="finishReporting"/>
+          <include name="afterEachTestMethod"/>
         </methods>
       </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
     </classes>

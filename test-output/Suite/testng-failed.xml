@@ -10,22 +10,28 @@
       </run>
     </groups>
     <classes>
+      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
+        <methods>
+          <include name="initiateReporting"/>
+          <include name="pageInitialization"/>
+          <include name="setUpDriver"/>
+          <include name="verifyStepsForExistingCustomerAutoValidCred" invocation-numbers="0"/>
+          <include name="startExtent"/>
+          <include name="finishReporting"/>
+          <include name="afterEachTestMethod"/>
+        </methods>
+      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
       <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest">
         <methods>
           <include name="initializationOfPages"/>
-          <include name="tearDown"/>
+          <include name="initiateReporting"/>
           <include name="setUpDriver"/>
           <include name="verifyLandingPageHome"/>
+          <include name="startExtent"/>
+          <include name="finishReporting"/>
+          <include name="afterEachTestMethod"/>
         </methods>
       </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest -->
-      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
-        <methods>
-          <include name="pageInitialization"/>
-          <include name="tearDown"/>
-          <include name="setUpDriver"/>
-          <include name="verifyStepsForExistingCustomerAutoValidCred" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
     </classes>
   </test> <!-- TestHome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

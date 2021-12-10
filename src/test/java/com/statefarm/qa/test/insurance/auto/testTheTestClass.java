@@ -14,7 +14,7 @@ public class testTheTestClass {
 		System.out.println(".........\n Second Test from another class");
 	}
 	
-	@Test(groups = {"positive", "generic"}, enabled = false)
+	@Test(groups = {"positive", "generic"}, enabled = true)
 	public void thirdTest() {
 		System.out.println(".........\n Third Test from another class");
 	}

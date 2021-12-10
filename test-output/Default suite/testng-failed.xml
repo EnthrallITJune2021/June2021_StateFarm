@@ -3,22 +3,15 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
+      <class name="com.statefarm.qa.test.insurance.auto.WebDriverSession">
         <methods>
-          <include name="verifyStepsForNewCustomerAuto2"/>
-          <include name="pageInitialization"/>
+          <include name="initiateReporting"/>
           <include name="tearDown"/>
           <include name="setUpDriver"/>
+          <include name="sessionCheck"/>
+          <include name="finishReporting"/>
         </methods>
-      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
-      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest">
-        <methods>
-          <include name="initializationOfPages"/>
-          <include name="tearDown"/>
-          <include name="setUpDriver"/>
-          <include name="verifyLandingPageHome"/>
-        </methods>
-      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest -->
+      </class> <!-- com.statefarm.qa.test.insurance.auto.WebDriverSession -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

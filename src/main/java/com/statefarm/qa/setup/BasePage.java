@@ -1,19 +1,38 @@
 package com.statefarm.qa.setup;
 
+import java.io.File;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.lang.reflect.Method;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
-
+import org.testng.annotations.BeforeSuite;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.Status;
+import com.google.common.io.Files;
+import com.statefarm.qa.reporting.ExtentManager;
+import com.statefarm.qa.reporting.ExtentTestManager;
+import com.statefarm.qa.reporting.TestLogger;
 import com.statefarm.qa.utils.ReadProperties;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
 
 	public static WebDriver driver;
+	public static ExtentReports extent;
+	
+	@BeforeSuite
+	public void initiateReporting() {
+		extent = ExtentManager.getInstance();
+	}
 	
 	@BeforeMethod
 	public WebDriver setUpDriver() {
@@ -43,9 +62,58 @@ public class BasePage {
 		WebDriverManager.chromedriver().setup();
 	}
 	
+	@BeforeMethod()
+	public void startExtent(Method method, Object[] testData) {
+		String className = method.getDeclaringClass().getSimpleName();
+		ExtentTestManager.startTest(method.getName());
+		ExtentTestManager.getTest().assignCategory(className);
+	}
+	
+	protected String getStackTrace(Throwable t) {
+		StringWriter sw = new StringWriter();
+		PrintWriter pw = new PrintWriter(sw);
+		t.printStackTrace(pw);
+		return sw.toString();
+	}
+	
 	@AfterMethod
-	public void tearDown() {
+	public void afterEachTestMethod(ITestResult result) throws Exception {
+		for (String group : result.getMethod().getGroups()) {
+			ExtentTestManager.getTest().assignCategory(group);
+		}
+		if (result.getStatus() == ITestResult.SUCCESS) {
+			ExtentTestManager.getTest().log(Status.PASS, "Test Passed");
+		}
+		else if (result.getStatus() == ITestResult.FAILURE) {
+			ExtentTestManager.getTest().log(Status.FAIL, getStackTrace(result.getThrowable()));
+			String ss = CaptureScreenShot(result.getName());
+			ExtentTestManager.getTest().addScreenCaptureFromPath(ss);
+		}
+		else if (result.getStatus() == ITestResult.SKIP) {
+			ExtentTestManager.getTest().log(Status.SKIP, "Test Skipped");
+		}
 		driver.quit();
 	}
 	
+	@AfterSuite
+	public void finishReporting() {
+		extent.flush();
+	}
+	
+	public static String CaptureScreenShot(String ssName) {
+		DateFormat dFormat = new SimpleDateFormat("MM.dd.yyyy HH.mm.ss");
+		Date date = new Date();
+		String postDate = dFormat.format(date);
+
+		File screenShotLocation = new File("screenShots/" + ssName + "_" + postDate + ".png");
+		File screenShotSrc = ((org.openqa.selenium.TakesScreenshot)driver).getScreenshotAs(org.openqa.selenium.OutputType.FILE);
+		try {
+			Files.copy(screenShotSrc, new File(screenShotLocation.getAbsolutePath()));
+			System.out.println("Error occured!!! \nScreen Shot Captured");
+		} catch (Exception e) {
+			System.out.println("Exception while taking screenshot " + e.getMessage());
+		}
+		TestLogger.log("Error Screen Shot has been saved at : ", screenShotLocation.getPath());
+		return screenShotLocation.getAbsolutePath();
+	}
 }
