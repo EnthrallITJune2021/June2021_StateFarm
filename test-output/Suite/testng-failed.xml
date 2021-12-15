@@ -15,7 +15,7 @@
           <include name="initiateReporting"/>
           <include name="pageInitialization"/>
           <include name="setUpDriver"/>
-          <include name="verifyStepsForExistingCustomerAutoValidCred" invocation-numbers="0"/>
+          <include name="verifyStepsForExistingCustomerAutoValidCred"/>
           <include name="startExtent"/>
           <include name="finishReporting"/>
           <include name="afterEachTestMethod"/>
@@ -26,7 +26,7 @@
           <include name="initializationOfPages"/>
           <include name="initiateReporting"/>
           <include name="setUpDriver"/>
-          <include name="verifyLandingPageHome"/>
+          <include name="verifyLandingPageHome" invocation-numbers="0"/>
           <include name="startExtent"/>
           <include name="finishReporting"/>
           <include name="afterEachTestMethod"/>

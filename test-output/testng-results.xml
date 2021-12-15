@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="5" total="7" passed="1">
+<testng-results skipped="1" failed="1" ignored="5" total="7" passed="0">
   <reporter-output>
     <line>
       <![CDATA[Dropdown value is :Homeowners]]>
@@ -8,41 +8,29 @@
       <![CDATA[Entering text is : 11417]]>
     </line>
     <line>
-      <![CDATA[Clicking... Start a quote]]>
-    </line>
-    <line>
-      <![CDATA[Dropdown value is :Homeowners]]>
-    </line>
-    <line>
-      <![CDATA[Entering text is : 11415]]>
-    </line>
-    <line>
-      <![CDATA[Clicking... Start a quote]]>
-    </line>
-    <line>
-      <![CDATA[Error Screen Shot has been saved at : screenShots\verifyStepsForExistingCustomerAutoValidCred_12.09.2021 22.55.29.png]]>
+      <![CDATA[Error Screen Shot has been saved at : screenShots\verifyLandingPageHome_12.14.2021 21.04.25.png]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="23886" started-at="2021-12-10T03:55:07Z" finished-at="2021-12-10T03:55:31Z">
+  <suite name="Suite" duration-ms="32005" started-at="2021-12-15T02:03:54Z" finished-at="2021-12-15T02:04:26Z">
     <groups>
       <group name="positive">
-        <method signature="InitialQuotingHomeOwnerTest.verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="verifyLandingPageHome" class="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest"/>
+        <method signature="InitialQuotingHomeOwnerTest.verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="verifyLandingPageHome" class="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest"/>
       </group> <!-- positive -->
       <group name="home">
-        <method signature="InitialQuotingHomeOwnerTest.verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="verifyLandingPageHome" class="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest"/>
+        <method signature="InitialQuotingHomeOwnerTest.verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="verifyLandingPageHome" class="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest"/>
       </group> <!-- home -->
     </groups>
-    <test name="TestHome" duration-ms="23886" started-at="2021-12-10T03:55:07Z" finished-at="2021-12-10T03:55:31Z">
+    <test name="TestHome" duration-ms="32005" started-at="2021-12-15T02:03:54Z" finished-at="2021-12-15T02:04:26Z">
       <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest">
-        <test-method status="PASS" signature="initiateReporting()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="initiateReporting" is-config="true" duration-ms="302" started-at="2021-12-10T03:55:06Z" finished-at="2021-12-10T03:55:07Z">
+        <test-method status="PASS" signature="initiateReporting()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="initiateReporting" is-config="true" duration-ms="323" started-at="2021-12-15T02:03:53Z" finished-at="2021-12-15T02:03:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initiateReporting -->
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="setUpDriver" is-config="true" duration-ms="6579" started-at="2021-12-10T03:55:07Z" finished-at="2021-12-10T03:55:13Z">
+        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="setUpDriver" is-config="true" duration-ms="12140" started-at="2021-12-15T02:03:54Z" finished-at="2021-12-15T02:04:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="startExtent" is-config="true" duration-ms="18" started-at="2021-12-10T03:55:13Z" finished-at="2021-12-10T03:55:13Z">
+        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="startExtent" is-config="true" duration-ms="22" started-at="2021-12-15T02:04:06Z" finished-at="2021-12-15T02:04:06Z">
           <params>
             <param index="0">
               <value>
@@ -51,18 +39,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.Object;@771db12c]]>
+                <![CDATA[[Ljava.lang.Object;@67427b69]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startExtent -->
-        <test-method status="PASS" signature="initializationOfPages()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="initializationOfPages" is-config="true" duration-ms="41" started-at="2021-12-10T03:55:13Z" finished-at="2021-12-10T03:55:13Z">
+        <test-method status="PASS" signature="initializationOfPages()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="initializationOfPages" is-config="true" duration-ms="41" started-at="2021-12-15T02:04:06Z" finished-at="2021-12-15T02:04:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializationOfPages -->
-        <test-method status="PASS" signature="verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="verifyLandingPageHome" duration-ms="523" started-at="2021-12-10T03:55:13Z" finished-at="2021-12-10T03:55:14Z">
+        <test-method status="FAIL" signature="verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="verifyLandingPageHome" duration-ms="18679" started-at="2021-12-15T02:04:06Z" finished-at="2021-12-15T02:04:25Z">
           <params>
             <param index="0">
               <value>
@@ -75,89 +63,28 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Dropdown value is :Homeowners]]>
-            </line>
-            <line>
-              <![CDATA[Entering text is : 11417]]>
-            </line>
-            <line>
-              <![CDATA[Clicking... Start a quote]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- verifyLandingPageHome -->
-        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="afterEachTestMethod" is-config="true" duration-ms="736" started-at="2021-12-10T03:55:14Z" finished-at="2021-12-10T03:55:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLandingPageHome status=SUCCESS method=InitialQuotingHomeOwnerTest.verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95] output=Dropdown value is :Homeowners]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterEachTestMethod -->
-        <test-method status="PASS" signature="finishReporting()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@42dafa95]" name="finishReporting" is-config="true" duration-ms="349" started-at="2021-12-10T03:55:31Z" finished-at="2021-12-10T03:55:31Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- finishReporting -->
-      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest -->
-      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
-        <test-method status="PASS" signature="setUpDriver()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@6500df86]" name="setUpDriver" is-config="true" duration-ms="4312" started-at="2021-12-10T03:55:15Z" finished-at="2021-12-10T03:55:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpDriver -->
-        <test-method status="PASS" signature="pageInitialization()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@6500df86]" name="pageInitialization" is-config="true" duration-ms="4" started-at="2021-12-10T03:55:19Z" finished-at="2021-12-10T03:55:19Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pageInitialization -->
-        <test-method status="PASS" signature="startExtent(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@6500df86]" name="startExtent" is-config="true" duration-ms="0" started-at="2021-12-10T03:55:19Z" finished-at="2021-12-10T03:55:19Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest.verifyStepsForExistingCustomerAutoValidCred(java.lang.String)]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.Object;@3afae281]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startExtent -->
-        <test-method status="FAIL" signature="verifyStepsForExistingCustomerAutoValidCred(java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@6500df86]" name="verifyStepsForExistingCustomerAutoValidCred" duration-ms="10521" depends-on-groups="auto, positive" started-at="2021-12-10T03:55:19Z" finished-at="2021-12-10T03:55:29Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Homeowners]]>
-              </value>
-            </param>
-          </params>
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#btnExisting"}
-  (Session info: chrome=96.0.4664.93)
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#quote\-main\-zip\-btn"}
+  (Session info: chrome=96.0.4664.45)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'NAS', ip: '192.168.1.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:37932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 84849c0e31fe63b86b3da24a1b3f2c68
-*** Element info: {Using=id, value=btnExisting}]]>
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/3n/z0_2p7gn03q...}, goog:chromeOptions: {debuggerAddress: localhost:49387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5a264ce0b0d4c3890989fe0c4d08538
+*** Element info: {Using=id, value=quote-main-zip-btn}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#btnExisting"}
-  (Session info: chrome=96.0.4664.93)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#quote\-main\-zip\-btn"}
+  (Session info: chrome=96.0.4664.45)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'NAS', ip: '192.168.1.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.93, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\mdnas\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:37932}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 84849c0e31fe63b86b3da24a1b3f2c68
-*** Element info: {Using=id, value=btnExisting}
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: /var/folders/3n/z0_2p7gn03q...}, goog:chromeOptions: {debuggerAddress: localhost:49387}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d5a264ce0b0d4c3890989fe0c4d08538
+*** Element info: {Using=id, value=quote-main-zip-btn}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -166,7 +93,6 @@ at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpR
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
 at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
 at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
@@ -174,10 +100,10 @@ at org.openqa.selenium.By$ById.findElement(By.java:188)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at com.sun.proxy.$Proxy15.click(Unknown Source)
-at com.statefarm.qa.common.CommonMethods.click(CommonMethods.java:43)
-at com.statefarm.qa.autoPages.Step1Page.step1PageExistingCustomerSteps(Step1Page.java:70)
-at com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest.verifyStepsForExistingCustomerAutoValidCred(InitialQuotingAutoTest.java:67)
+at com.sun.proxy.$Proxy15.getText(Unknown Source)
+at com.statefarm.qa.common.CommonMethods.click(CommonMethods.java:44)
+at com.statefarm.qa.autoPages.LandingPage.landingPageSteps(LandingPage.java:32)
+at com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest.verifyLandingPageHome(InitialQuotingHomeOwnerTest.java:24)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -211,27 +137,61 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[Dropdown value is :Homeowners]]>
             </line>
             <line>
-              <![CDATA[Entering text is : 11415]]>
-            </line>
-            <line>
-              <![CDATA[Clicking... Start a quote]]>
+              <![CDATA[Entering text is : 11417]]>
             </line>
           </reporter-output>
-        </test-method> <!-- verifyStepsForExistingCustomerAutoValidCred -->
-        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@6500df86]" name="afterEachTestMethod" is-config="true" duration-ms="1125" started-at="2021-12-10T03:55:29Z" finished-at="2021-12-10T03:55:31Z">
+        </test-method> <!-- verifyLandingPageHome -->
+        <test-method status="PASS" signature="afterEachTestMethod(org.testng.ITestResult)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="afterEachTestMethod" is-config="true" duration-ms="1100" started-at="2021-12-15T02:04:25Z" finished-at="2021-12-15T02:04:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyStepsForExistingCustomerAutoValidCred status=FAILURE method=InitialQuotingAutoTest.verifyStepsForExistingCustomerAutoValidCred(java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@6500df86] output=Dropdown value is :Homeowners]]]>
+                <![CDATA[[TestResult name=verifyLandingPageHome status=FAILURE method=InitialQuotingHomeOwnerTest.verifyLandingPageHome(java.lang.String, int)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c] output=Dropdown value is :Homeowners]]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Error Screen Shot has been saved at : screenShots\verifyStepsForExistingCustomerAutoValidCred_12.09.2021 22.55.29.png]]>
+              <![CDATA[Error Screen Shot has been saved at : screenShots\verifyLandingPageHome_12.14.2021 21.04.25.png]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterEachTestMethod -->
+        <test-method status="PASS" signature="finishReporting()[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest@402a079c]" name="finishReporting" is-config="true" duration-ms="367" started-at="2021-12-15T02:04:26Z" finished-at="2021-12-15T02:04:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishReporting -->
+      </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingHomeOwnerTest -->
+      <class name="com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest">
+        <test-method status="SKIP" signature="verifyStepsForExistingCustomerAutoValidCred(java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@59ec2012]" name="verifyStepsForExistingCustomerAutoValidCred" duration-ms="0" depends-on-groups="auto, positive" started-at="2021-12-15T02:04:26Z" finished-at="2021-12-15T02:04:26Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method InitialQuotingAutoTest.verifyStepsForExistingCustomerAutoValidCred(java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@59ec2012] depends on not successfully finished methods in group "positive"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method InitialQuotingAutoTest.verifyStepsForExistingCustomerAutoValidCred(java.lang.String)[pri:0, instance:com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest@59ec2012] depends on not successfully finished methods in group "positive"
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyStepsForExistingCustomerAutoValidCred -->
       </class> <!-- com.statefarm.qa.test.insurance.auto.InitialQuotingAutoTest -->
     </test> <!-- TestHome -->
   </suite> <!-- Suite -->
